@@ -11,14 +11,13 @@ class App extends Component {
 
 
   //Your code here:
+  componentDidMount() {
+    return this.handleAddTimer()
+  }
 
-
-
-
-
-
-
-
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
 
   // No need to modify anything in render or the class methods below
   // Unless, of course, you're curious about how it all works
